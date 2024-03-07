@@ -15,7 +15,9 @@ namespace ETicaretAPI.API.Controllers
         {
             _productService = productService;
 
-        } 
+        }
+
+        [HttpGet]
         public IActionResult GetProducts()
     {
         var products = _productService.GetProducts();
